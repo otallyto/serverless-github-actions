@@ -19,7 +19,12 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
-    # - run: npm run deploy
+
+    # tests whit hest
+    - name: Run Jest
+      uses: stefanoeb/jest-action@1.0.3
+
+    # serverless deploy
     - name: serverless deploy
       uses: serverless/github-action@master
       with:
