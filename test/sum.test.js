@@ -4,6 +4,6 @@ describe('sum test', () =>{
       return a + b
     }
     const result = sum(1,1)
-    expect(result).toEqual(2)
+    expect(result).toEqual(3)
   })
 })
